@@ -1,37 +1,112 @@
-html {
-  height: 100%;
-  width: 100%;
-  font-family: "Titillium Web", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  min-height: 100%;
-  min-width: 100%;
-  background: linear-gradient(pink, violet);
-}
-
-button {
-  font-size: 7px;
+  background: linear-gradient(to right, #c38f75, #9c6768);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 #main-content {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border: 1px solid #333;
-  background: rgba(255, 255, 255, 0.3);
-  padding: 15px 20px 18px 18px;
+  background: rgba(226, 150, 84, 0.323);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+h1 {
+  color: #4a6fa5;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+#create-task-form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #4a6fa5;
+}
+
+#new-task-description {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #fcfaf9;
   border-radius: 5px;
-  box-shadow: 2px 5px 5px #333;
+  font-size: 16px;
+  margin-bottom: 10px;
+  background-color: rgba(211, 237, 218, 0.611);
+}
+
+#submit {
+  background-color: #4a6fa5;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+#submit:hover {
+  background-color: #3a5a89;
 }
 
 #list {
-  margin: 10px;
-  border: 1px solid #333;
-  background: rgba(255, 255, 255, 0.75);
-  padding: 15px 20px 18px 18px;
-  border-radius: 5px;
-  box-shadow: 2px 5px 5px #333;
+  background-color: rgba(211, 237, 218, 0.611);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+h2 {
+  color: #4a6fa5;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+ul#tasks li {
+  background-color: rgba(92, 125, 226, 0.611);
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.delete-btn {
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+@media (max-width: 500px) {
+  #main-content {
+    padding: 15px;
+  }
 }
